@@ -7,7 +7,7 @@ body {
   margin: auto;
   padding: 1em 0;
   /* width: 90%; */
-  max-width: 800px;
+  max-width: 900px;
   font-family: sans-serif;
   background: #000;
   color: white;
@@ -42,7 +42,7 @@ section {
 
 img {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 @media screen and (min-width: 600px) {
@@ -56,12 +56,37 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
 }
 
+.sub-grid {
+  display: flex;
+
+  img {
+  }
+}
+
+figure {
+  margin: 2em 10px 0;
+  display: block;
+}
+figcaption {
+  font-size: 2em;
+}
+
+.box-1 {
+  align-items: center;
+  display: flex;
+}
 .box-1 {
   background: #e89a20;
 }
 .box-2 {
   background: #02bf63;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
