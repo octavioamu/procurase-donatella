@@ -12,13 +12,17 @@ body {
   background: #000;
   color: white;
 }
+.content {
+  margin: 1em;
+}
 p {
   font-size: 30px;
   text-align: left;
   line-height: 1.4em;
 }
 section p {
-  margin: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
 }
 
 h1 {
@@ -45,15 +49,6 @@ img {
   max-width: 600px;
 }
 
-@media screen and (min-width: 600px) {
-  h1 {
-    font-size: 100px;
-  }
-  p {
-    font-size: 40px;
-  }
-}
-
 .grid {
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
@@ -61,9 +56,6 @@ img {
 
 .sub-grid {
   display: flex;
-
-  img {
-  }
 }
 
 figure {
@@ -77,12 +69,32 @@ figcaption {
 .box-1 {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-1 > img {
+  width: 80%;
 }
 .box-1 {
   background: #e89a20;
 }
+
 .box-2 {
   background: #02bf63;
+}
+
+.img-half {
+  width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 100px;
+  }
+  p {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 600px) {
